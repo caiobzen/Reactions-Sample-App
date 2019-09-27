@@ -8,7 +8,9 @@ struct ReactionSelectionButton: View {
     
     var body: some View {
         Image(systemName: react.name)
-            .font(.system(size: 20))
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding(8)
             .foregroundColor(react.color)
             .gesture(
                 DragGesture(minimumDistance: 0)

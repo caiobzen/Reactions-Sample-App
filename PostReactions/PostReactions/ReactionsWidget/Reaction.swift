@@ -4,15 +4,22 @@ struct Reaction: View {
     let react: React
     let isSelected: Bool
     let iconSize: CGFloat
+    let scaledRatio: CGFloat
+    
+    init(react: React, isSelected: Bool, iconSize: CGFloat, scaledRatio: CGFloat = 1.5) {
+        self.react = react
+        self.isSelected = isSelected
+        self.iconSize = iconSize
+        self.scaledRatio = scaledRatio
+    }
     
     var body: some View {
         Image(systemName: react.name)
-            .font(.system(size: 20))
             .frame(width: iconSize, height: iconSize)
             .animation(.spring())
-            .scaleEffect(isSelected ? 1.3 : 1.0)
-            .background(isSelected ? Color.black : .clear)
+            .scaleEffect(isSelected ? scaledRatio : 1.0)
             .foregroundColor(isSelected ? react.color : .black)
+            .background(isSelected ? Color.black : .clear)
             .clipShape(Circle())
     }
 }
