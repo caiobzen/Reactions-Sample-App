@@ -3,26 +3,24 @@ import Reactions
 
 struct SampleView: View {
     
-    let reactions = [
-        Reaction(name: "hand.thumbsup.fill", color: Color(red: 0, green: 0.8, blue: 1)),
-        Reaction(name: "smiley.fill", color: .yellow),
-        Reaction(name: "flame.fill", color: .red),
-        Reaction(name: "star.fill", color: .yellow),
-        Reaction(name: "heart.fill", color: Color(red: 1, green: 0.4, blue: 0.3)),
+    let posts: [Post] = [
+        .init(title: "A Post!", subtitle: "This is a great post!", imageName: "1"),
+        .init(title: "A different post", subtitle: "This time a bit different post!", imageName: "2"),
+        .init(title: "Lots of posts!", subtitle: "The more, the better!", imageName: "3"),
     ]
     
     var body: some View {
         VStack {
             Text("Reactions")
+            .padding(.top, 32)
             .font(Font.custom("American Lemon", size: 90.0))
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
             
-            Reactions(reactions: reactions) { reaction in
-                print("selected reaction \(reaction)")
+            List(posts) { post in
+                PostCell(post: post)
             }
         }
         .frame(minWidth: .zero, maxWidth: .infinity, minHeight: .zero, maxHeight: .infinity)
-        .background(Color(red: 1, green: 1, blue: 0.92))
         .edgesIgnoringSafeArea(.all)
     }
 }

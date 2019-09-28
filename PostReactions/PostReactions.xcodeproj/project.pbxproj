@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB26189C233ED43700CBAC6B /* Reactions in Frameworks */ = {isa = PBXBuildFile; productRef = EB26189B233ED43700CBAC6B /* Reactions */; };
+		EB2618C1233EEBCA00CBAC6B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2618C0233EEBCA00CBAC6B /* PostCell.swift */; };
 		EBCF9F03233AFD7D00DD8ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9F02233AFD7D00DD8ED9 /* AppDelegate.swift */; };
 		EBCF9F05233AFD7D00DD8ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCF9F04233AFD7D00DD8ED9 /* SceneDelegate.swift */; };
 		EBCF9F09233AFD8100DD8ED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCF9F08233AFD8100DD8ED9 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2618C0233EEBCA00CBAC6B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EBCF9EFF233AFD7D00DD8ED9 /* PostReactions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostReactions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCF9F02233AFD7D00DD8ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCF9F04233AFD7D00DD8ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EBCF9F2B233D976900DD8ED9 /* SampleView.swift */,
+				EB2618C0233EEBCA00CBAC6B /* PostCell.swift */,
 				EBCF9F28233D92BF00DD8ED9 /* Font */,
 				EBCF9F02233AFD7D00DD8ED9 /* AppDelegate.swift */,
 				EBCF9F04233AFD7D00DD8ED9 /* SceneDelegate.swift */,
@@ -239,6 +242,7 @@
 				EBCF9F03233AFD7D00DD8ED9 /* AppDelegate.swift in Sources */,
 				EBCF9F05233AFD7D00DD8ED9 /* SceneDelegate.swift in Sources */,
 				EBCF9F2C233D976900DD8ED9 /* SampleView.swift in Sources */,
+				EB2618C1233EEBCA00CBAC6B /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
